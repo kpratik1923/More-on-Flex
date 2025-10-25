@@ -7,3 +7,59 @@ html, body{
     height: 100%;
     width: 100%;
 }
+
+.card{
+    height: 300px;
+    width: 410px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+.bottom{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background: linear-gradient(transparent, black);
+    position: absolute;
+    bottom: -40%;
+    transition: all ease 0.3s;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    background-color: #3892b3;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.card:hover .bottom{
+    bottom: 0%;
+}
+
+.bottom h4{
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 400;
+}
+.bottom h3{
+    background-color: white;
+    padding: 5px 8px;
+    border-radius: 50%;
+}
